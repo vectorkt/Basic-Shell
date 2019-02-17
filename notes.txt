@@ -1,0 +1,15 @@
+This shell implements the following:
+
+-history
+-exit command
+-limited external commands(ls,cat,clear,wc seem to work)
+-pipelining for external commands
+
+The pipelining can be tested with ls|wc -w|..|wc -w or something similar, as not all commands are implemented.
+
+Additionally, it has 3 internally implemented commands:
+-cpp
+-tee
+-dirname
+
+Managed to compile it with g++ -o output shell.cpp
